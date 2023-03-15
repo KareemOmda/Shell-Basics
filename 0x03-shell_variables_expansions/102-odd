@@ -1,2 +1,2 @@
 #!/bin/bash 
-fc 'NR%2==1'
+paste -d, - - | cut -d, -fl
