@@ -1,5 +1,2 @@
 #!/bin/bash
-WATER=$(echo $WATER | tr 'water' '01234')
-STIR=$(echo $STIR | tr 'stir' '56789')
-BESTCHOL=$(expr $(echo "$WATER + $STIR" | tr '0123456789' 'olhcsteb') + 0)
-echo $BESTCHOL
+WATER=$(echo $WATER | tr 'water' '01234') STIR=$(echo $STIR | tr 'stir' '56789') BESTCHOL=$(expr $(echo "$WATER + $STIR" | tr '0123456789' 'olhcsteb') + 0) echo $BESTCHOL
