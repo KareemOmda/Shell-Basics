@@ -1,2 +1,2 @@
 #!/bin/bash
-WATER=$(echo $WATER | tr 'water' '01234') STIR=$(echo $STIR | tr 'stir' '56789') BESTCHOL=$(expr $(echo "$WATER + $STIR" | tr '0123456789' 'olhcsteb') + 0) echo $BESTCHOL
+echo $(printf %o $(($((5#$(echo $WATER | tr 'water' '01234'))) + $((5#$(echo $STIR | tr 'stir.' '01234'))))) | tr '01234567' 'bestchol')
